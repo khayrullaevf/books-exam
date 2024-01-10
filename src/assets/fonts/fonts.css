@@ -1,0 +1,20 @@
+@font-face {
+    font-family: 'Karla-regular';
+    src: url('./Karla/static/Karla-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Rambla-regular';
+    src: url('./Rambla/Rambla-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Rubik-regular';
+    src: url('./Rubik/static/Rubik-Regular.ttf');
+}
+
+
+/* font-family: 'Inter', sans-serif;
+font-family: 'Karla', sans-serif;
+font-family: 'Rambla', sans-serif;
+font-family: 'Rubik', sans-serif; */
