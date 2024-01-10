@@ -1,0 +1,32 @@
+// mixins.scss
+
+// Media query mixin for extra small screens (phones)
+@mixin respond-to-xs {
+@media(max-width: 576px) {
+    @content;
+  }
+}
+
+// Media query mixin for small screens (tablets)
+@mixin respond-to-sm {
+@media (max-width: 768px) {
+    @content;
+  }
+}
+
+// Media query mixin for medium screens (laptops)
+@mixin respond-to-md {
+  @media  (max-width: 992px) {
+    @content;
+  }
+}
+
+// Media query mixin for large screens (desktops)
+@mixin respond-to-lg {
+ @media  (max-width: 1200px) {
+    @content;
+  }
+}
+
+
+

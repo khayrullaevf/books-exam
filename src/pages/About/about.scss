@@ -1,6 +1,10 @@
-@import '../../styles/variables';
-.about{
+@import "../../styles/variables";
+@import "../../styles/mixins";
+.about {
+  h1 {
     color: red;
     font-family: $font-rubik;
     font-weight: 600;
+  }
 }
+
