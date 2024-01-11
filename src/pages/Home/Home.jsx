@@ -1,8 +1,12 @@
-import React from 'react'
+import React from "react";
+import MyComponent from "../../components/ExampleFetchRender";
 const Home = () => {
   return (
-    <div>Home</div>
-  )
-}
+    <div>
+      Home
+      <MyComponent />
+    </div>
+  );
+};
 
-export default Home
+export default Home;
