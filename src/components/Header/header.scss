@@ -2,8 +2,11 @@
 
 .header {
   height: 613px;
-  background-position: right;
+  width: 100%;
+  background-position: right top;
   background-repeat: no-repeat;
+  background-attachment: fixed; /* Optional: Fixed background */
+  background-size: contain;
 }
 
 .hero {
@@ -52,6 +55,89 @@
       border: none;
       outline: none;
       text-decoration: none;
+    }
+  }
+}
+
+
+
+
+@include respond-to-904{
+  .hero{
+    margin-top: 50px;
+    &__title{
+      font-size: 50px;
+      max-width: 500px;
+    }
+    &__subtitle{
+      max-width: 500px;
+    }
+    form{
+      max-width: 350px;
+    }
+  }
+}
+
+@include respond-to-1040{
+  .hero{
+    &__title{
+      font-size: 55px;
+    }
+  }
+}
+
+@include respond-to-839{
+  .hero{
+    &__subtitle{
+      font-size: 25px;
+      max-width: 400px;
+    }
+  }
+}
+
+@include respond-to-640{
+  .hero{
+    &__title{
+      max-width: 290px;
+      font-size: 35px;
+      margin-top: 10px;
+    }
+    &__subtitle{
+      max-width: 290px;
+      font-size: 25px;
+      margin-top: 5px;
+    }
+    form{
+      margin-top: 5px;
+      max-width: 260px;
+    }
+  }
+}
+
+@include respond-to-xs{
+  .hero{
+    form{
+      max-width: 130px;
+    }
+  }
+}
+@include respond-to-490{
+  .hero{
+    &__title{
+      font-size: 22px;
+      max-width: 180px;
+    }
+    &__subtitle{
+      font-size: 12px;
+      max-width: 200px;
+    }
+    form{
+      margin-top: 0;
+      max-width: 50px;
+      height: 50px;
+      input{
+        max-width: 100px;
+      }
     }
   }
 }

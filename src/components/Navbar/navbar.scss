@@ -1,4 +1,5 @@
 @import "../../styles/variables";
+@import "../../styles/mixins";
 
 .navbar {
   display: flex;
@@ -63,3 +64,87 @@
     }
   }
 }
+.mobile__menu {
+  display: none;
+  transition: all 0.4s;
+  button{
+    background-color: rgb(255, 148, 8);
+    border: none;
+    display: none;
+  }
+
+  ul {
+    background-color: rgb(255, 94, 0);
+    transition: all 0.4s;
+    border-radius: 20px;
+    position: fixed;
+    top: 15%;
+    right: 7%;
+    width: 30%;
+    height: 40vh;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    li {
+      a {
+        color: #fff;
+        font-family: $font-rubik;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        outline: none;
+        text-decoration: none;
+      }
+    }
+    button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 8px 20px;
+      border-radius: 10px;
+      background: var(--color-second, #f5f6f8);
+      border: 1px solid transparent;
+      color: #000;
+      font-family: $font-rubik;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      max-width: 120px;
+    }
+  }
+}
+@include respond-to-lg {
+  .navbar {
+    &__right {
+      gap: 20px;
+      ul {
+        gap: 20px;
+      }
+      button {
+        padding: 13px 40px;
+        border-radius: 20px;
+      }
+    }
+  }
+}
+
+@include respond-to-640 {
+  .navbar {
+    &__right {
+      display: none;
+    }
+    
+  }
+  .mobile__menu{
+    display: block;
+    button{
+      display: block;
+    }
+  }
+}
+
+

@@ -28,5 +28,34 @@
   }
 }
 
+@mixin respond-to-1040 {
+ @media  (max-width: 1040px) {
+    @content;
+  }
+}
 
+@mixin respond-to-904 {
+ @media  (max-width: 904px) {
+    @content;
+  }
+}
+
+@mixin respond-to-839 {
+ @media  (max-width: 839px) {
+    @content;
+  }
+}
+
+
+@mixin respond-to-640 {
+ @media  (max-width: 640px) {
+    @content;
+  }
+}
+
+@mixin respond-to-490 {
+ @media  (max-width: 490px) {
+    @content;
+  }
+}
 

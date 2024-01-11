@@ -2,9 +2,62 @@ $font-rubik: "Rubik-regular";
 $font-rambla: "Rambla-regular";
 $font-karla: "Karla-regular";
 
+@import "./mixins";
+
 .container {
-  max-width: 1280px;
+  max-width: 1240px;
   width: 100%;
   margin: 0 auto;
-  padding:0 10px;
+  padding: 0 10px;
+}
+
+@include respond-to-lg {
+  .container {
+    max-width: 1000px;
+  }
+}
+@include respond-to-1040 {
+  .container {
+    max-width: 980px;
+  }
+}
+@include respond-to-md {
+  .container {
+    max-width: 860px;
+  }
+}
+@include respond-to-904 {
+  .container {
+    max-width: 800px;
+  }
+}
+
+@include respond-to-839 {
+  .container {
+    max-width: 730px;
+  }
+}
+
+@include respond-to-sm {
+  .container {
+    max-width: 600px;
+  }
+}
+
+@include respond-to-640 {
+  .container {
+    max-width: 500px;
+  }
+}
+
+@include respond-to-xs{
+  .container{
+    max-width: 450px;
+  }
+}
+
+@include respond-to-490{
+  .container{
+    max-width: 350px;
+  }
 }
