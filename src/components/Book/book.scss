@@ -1,0 +1,16 @@
+@import '../../styles/variables';
+@import '../../styles/mixins';
+
+.book{
+      width: 416.21px;
+      height: 225.354px;
+      border: 1px solid red;
+      display: flex;
+      column-gap: 26px;
+      border-radius: 6px;
+      &__info{
+        display: flex;
+        flex-direction: column;
+        
+      }
+}

@@ -3,6 +3,7 @@ import Header from "../../components/Header/Header";
 // import ExampleFetchRender from '../../components/ExampleFetchRender'
 
 import heroBg from '../../assets/imgs/hero.png'
+import BookShelf from "../../components/BookShelf/BookShelf";
 const Home = () => {
   const title = `read and add your insight
 `;
@@ -12,6 +13,7 @@ const Home = () => {
   return (
     <div>
       <Header title={title} bg={heroBg} subtitle={subtitle}/>
+      <BookShelf/>
     </div>
   );
 };
