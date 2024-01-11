@@ -1,12 +1,16 @@
-import './blog.scss'
+import Header from "../../components/Header/Header";
+import "./blog.scss";
+import blogBg from "../../assets/imgs/blog-hero.png";
 const Blog = () => {
+  const title = "blog mybook";
+  const subtitle =
+    "lightweight article where discussing matters relating to the book";
+
   return (
     <div className="blog">
-      <h1>Blog</h1>
-      <h2>Blogs</h2>
-      <h2>My Blogs</h2>
+      <Header title={title} bg={blogBg} subtitle={subtitle} />
     </div>
   );
-}
+};
 
-export default Blog
+export default Blog;

@@ -1,0 +1,57 @@
+@import "../../styles/variables";
+
+.header {
+  height: 613px;
+  background-position: right;
+  background-repeat: no-repeat;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  &__title {
+    color: #000;
+    font-family: $font-rubik;
+    font-size: 75px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 126.667%;
+    text-transform: uppercase;
+    max-width: 713px;
+    margin-bottom: 15px;
+  }
+  &__subtitle {
+    margin-top: 15px;
+    color: #000;
+    font-family: $font-rambla;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+    max-width: 555px;
+  }
+  form {
+    margin-top: 26px;
+    display: flex;
+    max-width: 406px;
+    height: 60px;
+    background: #f5f6f8;
+    border-radius: 6px;
+    button {
+      border: none;
+      outline: none;
+      text-decoration: none;
+      border-radius: 6px;
+      background: #f5f6f8;
+    }
+    input {
+      border-radius: 6px;
+      background: #f5f6f8;
+      border: none;
+      outline: none;
+      text-decoration: none;
+    }
+  }
+}

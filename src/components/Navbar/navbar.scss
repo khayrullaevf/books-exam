@@ -1,0 +1,65 @@
+@import "../../styles/variables";
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 120px;
+  &__left {
+    display: flex;
+    gap: 20px;
+  }
+  &__right {
+    display: flex;
+    gap: 45px;
+    ul {
+      display: flex;
+      gap: 45px;
+      list-style: none;
+      li {
+        color: #fff;
+        a {
+          color: #fff;
+          font-family: $font-rubik;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: normal;
+          outline: none;
+          text-decoration: none;
+          padding-bottom: 4px;
+        }
+        .active {
+          border-bottom: 2px solid white;
+        }
+      }
+    }
+    button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 14px 58px;
+      border-radius: 30px;
+      background: var(--color-second, #f5f6f8);
+      border: 1px solid transparent;
+      color: #000;
+      font-family: $font-rubik;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+    }
+    button:hover {
+      background-color: #d8dee9;
+      color: #403d3d;
+      transform: scale(1.03);
+      transition: all 0.2s;
+    }
+    button:active {
+      background-color: #d8dee9;
+      color: #403d3d;
+      transform: scale(0.9);
+      transition: all 0.2s;
+    }
+  }
+}
