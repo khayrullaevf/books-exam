@@ -42,6 +42,7 @@ const BookShelf = () => {
     return <p>Error occurred</p>;
   }
 
+  console.log(data?.items);
   return (
     <div className="bookshelf">
       <div className="genres">
