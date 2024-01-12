@@ -63,6 +63,11 @@
       }
     }
   }
+
+  &__recomendations{
+    margin-top: 120px;
+
+  }
 }
 .books {
   flex: 5;
@@ -88,5 +93,12 @@
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
+  }
+  .popular{
+    margin-top: 130px;
+    &__books{
+      display: flex;
+      column-gap: 63px;
+    }
   }
 }

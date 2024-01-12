@@ -4,6 +4,7 @@ import { fetchData } from "../../redux/slice/fetchData"; // Update with the corr
 import Loading from "../Loading/Loading";
 import "./bookshelf.scss";
 import Book from "../Book/Book";
+import PopularBooks from "../PopularBooks/PopularBooks";
 
 const API__KEY = "AIzaSyBvoZyYhC0yBcKFwCHqQN5CVew1cU2qgn8";
 
@@ -59,12 +60,33 @@ const BookShelf = () => {
             </li>
           ))}
         </ul>
+        <h2 className="genres__recomendations">Recomendations</h2>
+        <ul>
+          <li>
+            <button>Artist of the Month</button>
+          </li>
+          <li>
+            <button>Book of the Year</button>
+          </li>
+          <li>
+            <button>Top Genre</button>
+          </li>
+          <li>
+            <button>Trending</button>
+          </li>
+        </ul>
       </div>
       <div className="books">
         <h2>Recommended</h2>
         <div className="books__cards">
           {data?.items.slice(0, 4).map((book, index) => (
             <Book key={index} book={book} />
+          ))}
+        </div>
+        <h2 className="popular">Popular</h2>
+        <div className="popular__books">
+          {data?.items.slice(5, 9).map((book, index) => (
+            <PopularBooks key={index} book={book} />
           ))}
         </div>
       </div>

@@ -1,0 +1,28 @@
+@import "../../styles/variables";
+@import "../../styles//mixins";
+
+.popular-card {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 188px;
+  border-radius: 10px;
+  &__img {
+    width:100%;
+    height: 288px;
+  }
+  h2,
+  h3 {
+    margin-left: 1rem;
+  }
+}
+
+.popular-card:hover {
+  transform: scale(1.03);
+  transition: all 0.2s;
+}
+
+.popular-card:active {
+  transform: scale(0.9);
+  transition: all 0.2s;
+}

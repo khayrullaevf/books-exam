@@ -2,6 +2,7 @@
 @import "../../styles/mixins";
 
 .book {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   width: 416.21px;
   height: 225.354px;
   display: flex;
@@ -23,7 +24,6 @@
       margin-bottom: 0;
     }
     h3 {
-        
       color: rgba(0, 0, 0, 0.6);
       font-family: $font-rubik;
       font-size: 16px;
@@ -62,7 +62,15 @@
       font-style: normal;
       font-weight: 400;
       margin-top: 15px;
-    
     }
   }
+}
+
+.book:hover {
+  transform: scale(1.03);
+  transition: all 0.2s;
+}
+.book:active {
+  transform: scale(0.9);
+  transition: all 0.2s;
 }
