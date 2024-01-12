@@ -64,3 +64,9 @@
   }
 }
 
+@mixin respond-to-1260 {
+  @media (max-width: 1260px) {
+    @content;
+  }
+}
+

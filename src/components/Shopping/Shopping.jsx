@@ -77,9 +77,10 @@ const Shopping = () => {
         </div>
       </div>
       <div className="shopping__books">
-        {data?.items.map((book, index) => (
-          <ShoppingBook key={index} book={book}/>
-        ))}
+        {Array.isArray(data?.items) &&
+          data.items
+            .slice(0, 4)
+            .map((book, index) => <ShoppingBook key={index} book={book} />)}
       </div>
     </div>
   );

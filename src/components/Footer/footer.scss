@@ -39,6 +39,43 @@ footer {
 }
 
 
+@include respond-to-1260{
+
+.footer {
+  height: 80px;
+  display: flex;
+  justify-content: flex-end;
+  column-gap: 16rem;
+  align-items: center;
+  padding-right: 30px;
+  padding-left: 20px;
+  h2 {
+    color: #fff;
+    font-family: $font-rubik;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+  ul {
+    list-style: none;
+    display: flex;
+    column-gap: 30px;
+    li {
+      a {
+        text-decoration: none;
+        font-family: $font-rubik;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+      }
+    }
+  }
+}
+
+}
+
 @include respond-to-lg{
 
 .footer {
@@ -75,6 +112,7 @@ footer {
 }
 
 }
+
 
 @include respond-to-839{
   .footer {

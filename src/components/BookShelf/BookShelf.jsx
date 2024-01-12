@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { fetchData } from "../../redux/slice/fetchData"; 
+import { fetchData } from "../../redux/slice/fetchData";
 import Loading from "../Loading/Loading";
 import "./bookshelf.scss";
 import Book from "../Book/Book";
@@ -10,7 +10,7 @@ const API__KEY = "AIzaSyBvoZyYhC0yBcKFwCHqQN5CVew1cU2qgn8";
 
 const BookShelf = () => {
   const dispatch = useDispatch();
-  const data = useSelector((state) => state.data.data); 
+  const data = useSelector((state) => state.data.data);
   const loading = useSelector((state) => state.data.loading);
   const error = useSelector((state) => state.data.error);
 
@@ -80,31 +80,35 @@ const BookShelf = () => {
         <div className="books">
           <h2>Recommended</h2>
           <div className="books__cards">
-            {data?.items.slice(0, 4).map((book, index) => (
-              <Book key={index} book={book} />
-            ))}
+            {Array.isArray(data?.items) &&
+              data.items
+                .slice(0, 4)
+                .map((book, index) => <Book key={index} book={book} />)}
           </div>
           <h2 className="popular">Popular</h2>
           <div className="popular__books">
-            {data?.items.slice(3, 7).map((book, index) => (
-              <PopularBooks key={index} book={book} />
-            ))}
+            {Array.isArray(data?.items) &&
+              data.items
+                .slice(3, 7)
+                .map((book, index) => <PopularBooks key={index} book={book} />)}
           </div>
         </div>
         <div className="books__second">
           <h2>This new story</h2>
           <div className="books__second-cards">
-            {data?.items.slice(6, 10).map((book, index) => (
-              <NewStory key={index} book={book} />
-            ))}
+            {Array.isArray(data?.items) &&
+              data.items
+                .slice(6, 10)
+                .map((book, index) => <NewStory key={index} book={book} />)}
           </div>
           <h2 style={{ textAlign: "start", marginTop: "130px" }}>
             Which They like
           </h2>
           <div className="books__cards">
-            {data?.items.slice(0, 4).map((book, index) => (
-              <Book key={index} book={book} />
-            ))}
+            {Array.isArray(data?.items) &&
+              data.items
+                .slice(0, 4)
+                .map((book, index) => <Book key={index} book={book} />)}
           </div>
         </div>
       </div>

@@ -1,0 +1,31 @@
+@import "../../styles/mixins";
+@import "../../styles/variables";
+
+.articles {
+  background: #f5f6f8;
+  padding-bottom: 120px;
+  padding-top: 73px;
+}
+
+.articles__cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 26px;
+}
+
+@include respond-to-1260 {
+  .articles {
+    background: #f5f6f8;
+    padding-bottom: 70px;
+    padding-top: 73px;
+    justify-content: center;
+  }
+
+  .articles__cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 26px;
+    justify-content: center;
+
+  }
+}
