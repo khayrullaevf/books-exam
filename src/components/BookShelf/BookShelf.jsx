@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { fetchData } from "../../redux/slice/fetchData"; // Update with the correct path
+import { fetchData } from "../../redux/slice/fetchData"; 
 import Loading from "../Loading/Loading";
 import "./bookshelf.scss";
 import Book from "../Book/Book";
@@ -10,7 +10,7 @@ const API__KEY = "AIzaSyBvoZyYhC0yBcKFwCHqQN5CVew1cU2qgn8";
 
 const BookShelf = () => {
   const dispatch = useDispatch();
-  const data = useSelector((state) => state.data.data); // Adjust the selector based on your state structure
+  const data = useSelector((state) => state.data.data); 
   const loading = useSelector((state) => state.data.loading);
   const error = useSelector((state) => state.data.error);
 

@@ -1,0 +1,19 @@
+@import "../../styles/variables";
+@import "../../styles/mixins";
+
+.shopping {
+  background: #f5f6f8;
+  display: flex;
+  padding-bottom: 79px;
+  &__filters{
+    flex: 2;
+  }
+  &__books{
+    flex: 5;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding-top: 70px;
+  }
+}
+
