@@ -4,6 +4,7 @@ import Header from "../../components/Header/Header";
 
 import heroBg from '../../assets/imgs/hero.png'
 import BookShelf from "../../components/BookShelf/BookShelf";
+import Footer from "../../components/Footer/Footer";
 const Home = () => {
   const title = `read and add your insight
 `;
@@ -14,6 +15,7 @@ const Home = () => {
     <div>
       <Header title={title} bg={heroBg} subtitle={subtitle}/>
       <BookShelf/>
+      <Footer/>
     </div>
   );
 };

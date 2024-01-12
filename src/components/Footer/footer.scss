@@ -1,0 +1,39 @@
+@import "../../styles/mixins";
+@import "../../styles/variables";
+
+footer {
+  height: 80px;
+  background: #ff971d;
+}
+
+.footer {
+  height: 80px;
+  display: flex;
+  justify-content: flex-end;
+  column-gap: 329px;
+  align-items: center;
+  h2 {
+    color: #fff;
+    font-family: $font-rubik;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+  ul {
+    list-style: none;
+    display: flex;
+    column-gap: 47px;
+    li {
+      a {
+        text-decoration: none;
+        color: #fff;
+        font-family: $font-rubik;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+      }
+    }
+  }
+}

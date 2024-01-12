@@ -1,5 +1,6 @@
 import React from "react";
 import stars from "../../assets/imgs/stars.png";
+import defaultCardImage from "../../assets/imgs/no-image.png";
 
 import "./popularbooks.scss";
 import { Link } from "react-router-dom";
@@ -10,7 +11,7 @@ const PopularBooks = ({ book }) => {
       <div className="popular-card">
         <img
           className="popular-card__img"
-          src={book?.volumeInfo?.imageLinks?.thumbnail}
+          src={book?.volumeInfo?.imageLinks?.thumbnail||defaultCardImage}
           alt={book?.volumeInfo?.authors[0]}
         />
         <div className="book__info">

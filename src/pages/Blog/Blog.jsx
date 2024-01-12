@@ -1,6 +1,7 @@
 import Header from "../../components/Header/Header";
 import "./blog.scss";
 import blogBg from "../../assets/imgs/blog-hero.png";
+import Footer from "../../components/Footer/Footer";
 const Blog = () => {
   const title = "blog mybook";
   const subtitle =
@@ -9,6 +10,7 @@ const Blog = () => {
   return (
     <div className="blog">
       <Header title={title} bg={blogBg} subtitle={subtitle} />
+      <Footer/>
     </div>
   );
 };
