@@ -61,3 +61,8 @@ $font-karla: "Karla-regular";
     max-width: 350px;
   }
 }
+@include respond-to-375{
+  .container{
+    max-width: 300px;
+  }
+}
