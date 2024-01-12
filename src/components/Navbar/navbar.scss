@@ -149,3 +149,59 @@
 }
 
 
+
+@include respond-to-490{
+  .mobile__menu {
+  display: block;
+  transition: all 0.4s;
+  button{
+    background-color: rgb(255, 148, 8);
+    border: none;
+    display: block;
+  }
+
+  ul {
+    background-color: rgb(255, 94, 0);
+    transition: all 0.4s;
+    border-radius: 20px;
+    position: fixed;
+    top: 15%;
+    right: 7%;
+    width: 30%;
+    height: 32vh;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    padding-right: 10px;
+    li {
+      a {
+        font-family: $font-rubik;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        outline: none;
+        text-decoration: none;
+      }
+    }
+    button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 8px 20px;
+      border-radius: 10px;
+      background: var(--color-second, #f5f6f8);
+      border: 1px solid transparent;
+      color: #000;
+      font-family: $font-rubik;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      max-width: 120px;
+    }
+  }
+}
+}
