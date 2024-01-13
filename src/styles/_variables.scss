@@ -11,6 +11,11 @@ $font-karla: "Karla-regular";
   padding: 0 10px;
 }
 
+@include respond-to-1260 {
+  .container {
+    max-width: 1160px;
+  }
+}
 @include respond-to-lg {
   .container {
     max-width: 1000px;

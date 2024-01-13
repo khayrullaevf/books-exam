@@ -31,7 +31,8 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 350px;
+        max-width: 350px;
+        width: 100%;
         height: 45px;
         color: #000;
         font-family: $font-karla;
@@ -79,7 +80,7 @@
   background: #f5f6f8;
   box-shadow: 0px 15px 80px 0px rgba(0, 0, 0, 0.1);
   padding-left: 2rem;
-  padding-right: 2rem;
+  padding-right: 1.2rem;
   padding-top: 0.5rem;
   padding-bottom: 2rem;
   h2 {
@@ -131,5 +132,564 @@
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
+  }
+}
+
+@include respond-to-1260 {
+  .bookshelf {
+    background: #f5f6f8;
+    display: flex;
+    padding-bottom: 79px;
+    width: 100%;
+  }
+
+  .genres {
+    flex: 1.5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 3rem;
+    h2 {
+      color: #000;
+      font-family: $font-karla;
+      font-size: 25px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+    }
+    ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      row-gap: 25px;
+      width: 100%;
+      li {
+        button {
+         display: flex;
+          justify-content: center;
+          align-items: center;
+          max-width: 200px;
+          width: 100%;
+          height: 45px;
+          color: #000;
+          font-family: $font-karla;
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+          border: 1px solid #fff;
+          background: #fff;
+          border-radius: 15px;
+          padding-top: 12px;
+          padding-bottom: 12px;
+          cursor: pointer;
+          &.active {
+            color: #ff971d;
+            border-color: #ff971d;
+          }
+        }
+        button:hover {
+          transform: scale(1.03);
+          transition: all 0.2s;
+          color: #ff971d;
+          border-color: #ff971d;
+        }
+        button:active {
+          transform: scale(0.9);
+          transition: all 0.2s;
+          color: #ff971d;
+          border-color: #ff971d;
+        }
+      }
+    }
+
+    &__recomendations {
+      margin-top: 120px;
+    }
+  }
+  .books__wrapper {
+    flex: 5;
+    width: 70%;
+  }
+  .books {
+    border-radius: 10px 0px 0px 10px;
+    background: #f5f6f8;
+    box-shadow: 0px 15px 80px 0px rgba(0, 0, 0, 0.1);
+    padding-left: 2rem;
+    padding-right: 1.2rem;
+    padding-top: 0.5rem;
+    padding-bottom: 2rem;
+    h2 {
+      color: #000;
+      font-family: $font-rubik;
+      font-size: 40px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      letter-spacing: 0.08px;
+      margin-top: 5px;
+    }
+    &__cards {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .popular {
+      margin-top: 130px;
+      &__books {
+        display: flex;
+        column-gap: 63px;
+        flex-wrap: wrap;
+        row-gap: 50px;
+      }
+    }
+  }
+
+  .books__second {
+    flex: 5;
+    border-radius: 10px 0px 0px 10px;
+    margin: 2rem;
+    background: #f5f6f8;
+    box-shadow: 0px 15px 80px 0px rgba(0, 0, 0, 0.1);
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 0.5rem;
+    padding-bottom: 2rem;
+    h2 {
+      color: #000;
+      font-family: $font-rubik;
+      font-size: 40px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      letter-spacing: 0.08px;
+      text-align: center;
+    }
+
+    &-cards {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+  }
+}
+
+@include respond-to-640{
+  .bookshelf {
+    background: #f5f6f8;
+    display: flex;
+    padding-bottom: 79px;
+    width: 100%;
+  }
+
+  .genres {
+    flex: 1.5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 3rem;
+    padding-left: 1rem;
+    h2 {
+      color: #000;
+      font-family: $font-karla;
+      font-size: 23px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+    }
+    ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      padding: 0.2rem;
+      row-gap: 25px;
+      li {
+        button {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          max-width: 150px;
+          width: 100%;
+          height: 45px;
+          color: #000;
+          font-family: $font-karla;
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+          border: 1px solid #fff;
+          background: #fff;
+          border-radius: 15px;
+          padding-top: 12px;
+          padding-bottom: 12px;
+          cursor: pointer;
+          &.active {
+            color: #ff971d;
+            border-color: #ff971d;
+          }
+        }
+        button:hover {
+          transform: scale(1.03);
+          transition: all 0.2s;
+          color: #ff971d;
+          border-color: #ff971d;
+        }
+        button:active {
+          transform: scale(0.9);
+          transition: all 0.2s;
+          color: #ff971d;
+          border-color: #ff971d;
+        }
+      }
+    }
+
+    &__recomendations {
+      margin-top: 120px;
+    }
+  }
+  .books__wrapper {
+    flex: 5;
+    width: 50%;
+  }
+  .books {
+    border-radius: 10px 0px 0px 10px;
+    background: #f5f6f8;
+    box-shadow: 0px 15px 80px 0px rgba(0, 0, 0, 0.1);
+    padding-left: 1rem;
+    padding-right: 1.2rem;
+    padding-top: 0.5rem;
+    padding-bottom: 2rem;
+    h2 {
+      color: #000;
+      font-family: $font-rubik;
+      font-size: 26px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      letter-spacing: 0.08px;
+      margin-top: 5px;
+    }
+    &__cards {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .popular {
+      margin-top: 130px;
+      &__books {
+        display: flex;
+        column-gap: 63px;
+        flex-wrap: wrap;
+        row-gap: 40px;
+      }
+    }
+  }
+
+  .books__second {
+    flex: 5;
+    border-radius: 10px 0px 0px 10px;
+    margin: 2rem;
+    background: #f5f6f8;
+    box-shadow: 0px 15px 80px 0px rgba(0, 0, 0, 0.1);
+    padding-left: 1rem;
+    padding-right: 2rem;
+    padding-top: 0.5rem;
+    padding-bottom: 2rem;
+    h2 {
+      color: #000;
+      font-family: $font-rubik;
+      font-size: 40px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      letter-spacing: 0.08px;
+      text-align: center;
+    }
+
+    &-cards {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+  }
+}
+
+@include respond-to-490{
+  .bookshelf {
+    background: #f5f6f8;
+    display: flex;
+    padding-bottom: 79px;
+    width: 100%;
+  }
+
+  .genres {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 3rem;
+    padding-left: 1rem;
+    h2 {
+      color: #000;
+      font-family: $font-karla;
+      font-size: 15px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+    }
+    ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      padding: 0.2rem;
+      row-gap: 25px;
+      li {
+        button {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          max-width: 100px;
+          width: 100%;
+          height: 30px;
+          color: #000;
+          font-family: $font-karla;
+          font-size: 15px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+          border: 1px solid #fff;
+          background: #fff;
+          border-radius: 15px;
+          padding-top: 12px;
+          padding-bottom: 12px;
+          cursor: pointer;
+          &.active {
+            color: #ff971d;
+            border-color: #ff971d;
+          }
+        }
+        button:hover {
+          transform: scale(1.03);
+          transition: all 0.2s;
+          color: #ff971d;
+          border-color: #ff971d;
+        }
+        button:active {
+          transform: scale(0.9);
+          transition: all 0.2s;
+          color: #ff971d;
+          border-color: #ff971d;
+        }
+      }
+    }
+
+    &__recomendations {
+      margin-top: 120px;
+    }
+  }
+  .books__wrapper {
+    flex: 7;
+    width: 60%;
+  }
+  .books {
+    border-radius: 10px 0px 0px 10px;
+    background: #f5f6f8;
+    box-shadow: 0px 15px 80px 0px rgba(0, 0, 0, 0.1);
+    padding-left: 1rem;
+    padding-right: 1.2rem;
+    padding-top: 0.5rem;
+    padding-bottom: 2rem;
+    h2 {
+      color: #000;
+      font-family: $font-rubik;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      letter-spacing: 0.08px;
+      margin-top: 5px;
+    }
+    &__cards {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .popular {
+      margin-top: 130px;
+      &__books {
+        display: flex;
+        column-gap: 63px;
+        flex-wrap: wrap;
+        row-gap: 40px;
+      }
+    }
+  }
+
+  .books__second {
+    flex: 5;
+    border-radius: 10px 0px 0px 10px;
+    margin: 2rem;
+    background: #f5f6f8;
+    box-shadow: 0px 15px 80px 0px rgba(0, 0, 0, 0.1);
+    padding-left: 1rem;
+    padding-right: 2rem;
+    padding-top: 0.5rem;
+    padding-bottom: 2rem;
+    h2 {
+      color: #000;
+      font-family: $font-rubik;
+      font-size: 40px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      letter-spacing: 0.08px;
+      text-align: center;
+    }
+
+    &-cards {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+  }
+}
+
+@include respond-to-490{
+  .bookshelf {
+    background: #f5f6f8;
+    display: flex;
+    padding-bottom: 79px;
+    width: 100%;
+  }
+
+  .genres {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 3rem;
+    padding-left: 1rem;
+    h2 {
+      color: #000;
+      font-family: $font-karla;
+      font-size: 15px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+    }
+    ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      padding: 0.2rem;
+      row-gap: 25px;
+      li {
+        button {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          max-width: 100px;
+          width: 100%;
+          height: 30px;
+          color: #000;
+          font-family: $font-karla;
+          font-size: 15px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+          border: 1px solid #fff;
+          background: #fff;
+          border-radius: 15px;
+          padding-top: 12px;
+          padding-bottom: 12px;
+          cursor: pointer;
+          &.active {
+            color: #ff971d;
+            border-color: #ff971d;
+          }
+        }
+        button:hover {
+          transform: scale(1.03);
+          transition: all 0.2s;
+          color: #ff971d;
+          border-color: #ff971d;
+        }
+        button:active {
+          transform: scale(0.9);
+          transition: all 0.2s;
+          color: #ff971d;
+          border-color: #ff971d;
+        }
+      }
+    }
+
+    &__recomendations {
+      margin-top: 120px;
+    }
+  }
+  .books__wrapper {
+    flex: 7;
+    width: 60%;
+  }
+  .books {
+    border-radius: 10px 0px 0px 10px;
+    background: #f5f6f8;
+    box-shadow: 0px 15px 80px 0px rgba(0, 0, 0, 0.1);
+    padding-left: 1rem;
+    padding-right: 1.2rem;
+    padding-top: 0.5rem;
+    padding-bottom: 2rem;
+    h2 {
+      color: #000;
+      font-family: $font-rubik;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      letter-spacing: 0.08px;
+      margin-top: 5px;
+    }
+    &__cards {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .popular {
+      margin-top: 130px;
+      &__books {
+        display: flex;
+        column-gap: 63px;
+        flex-wrap: wrap;
+        row-gap: 40px;
+      }
+    }
+  }
+
+  .books__second {
+    flex: 5;
+    border-radius: 10px 0px 0px 10px;
+    margin: 2rem;
+    background: #f5f6f8;
+    box-shadow: 0px 15px 80px 0px rgba(0, 0, 0, 0.1);
+    padding-left: 1rem;
+    padding-right: 2rem;
+    padding-top: 0.5rem;
+    padding-bottom: 2rem;
+    h2 {
+      color: #000;
+      font-family: $font-rubik;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      letter-spacing: 0.08px;
+      text-align: center;
+    }
+
+    &-cards {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
   }
 }

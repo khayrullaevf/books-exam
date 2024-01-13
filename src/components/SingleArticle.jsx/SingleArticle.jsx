@@ -30,13 +30,14 @@ const SingleArticle = () => {
         <img src={data?.imageUrl} alt={data?.title} />
         <div style={{ paddingLeft: "3rem", paddingRight: "3rem" }}>
           <h2>{data?.title}</h2>
-          <p>{data?.summary.slice(0,180)}...</p>
+          <p>{data?.summary?.slice(0,180)}...</p>
           <Link to="/blog" style={{ paddingLeft: "3rem" }}>
             <button>back to blogs</button>
           </Link>
         </div>
       </div>
     </div>
+  
   );
 };
 

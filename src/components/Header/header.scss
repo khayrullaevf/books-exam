@@ -122,6 +122,15 @@
   }
 }
 @include respond-to-490{
+  .header {
+  height: 370px;
+  width: 100%;
+  background-position: right top;
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* Optional: Fixed background */
+  background-size: contain;
+}
+
   .hero{
     &__title{
       font-size: 22px;

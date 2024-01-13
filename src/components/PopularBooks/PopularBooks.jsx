@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 
 const PopularBooks = ({ book }) => {
   return (
-    <Link to={`/about/${book?.id}`} style={{ textDecoration: "none" }}>
+    <Link to={`/about/${book?.id}`} style={{ textDecoration: "none",maxWidth:'100%', width:'100%' }}>
       <div className="popular-card">
         <img
           className="popular-card__img"
