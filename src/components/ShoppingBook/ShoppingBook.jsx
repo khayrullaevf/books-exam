@@ -5,11 +5,11 @@ import stars from "../../assets/imgs/stars.png";
 import "./shoppingbook.scss";
 const ShoppingBook = ({ book }) => {
   return (
-    <div className="shoppingBook" style={{height:'338px', alignItems:'center'}}>
+    <div className="shoppingBook">
       <img
         src={book?.volumeInfo?.imageLinks?.thumbnail || defaultCardImage}
         alt={book?.volumeInfo?.authors[0]}
-        style={{height:'225px'}}
+    
       />
       <div className="shoppingBook__info">
         <h2 style={{ textAlign: "start" }}>

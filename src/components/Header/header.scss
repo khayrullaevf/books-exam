@@ -110,6 +110,16 @@
     form{
       margin-top: 5px;
       max-width: 260px;
+      height: 30px;
+      button{
+        img{
+          width: 15px;
+          height: 15px;
+        }
+      }
+      input{
+        height: 30px;
+      }
     }
   }
 }
@@ -143,9 +153,10 @@
     form{
       margin-top: 0;
       max-width: 50px;
-      height: 50px;
+      height: 30px;
       input{
         max-width: 100px;
+        height: 28px;
       }
     }
   }

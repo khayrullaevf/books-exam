@@ -8,3 +8,373 @@
   }
 }
 
+
+
+
+.single__book {
+  background: #f5f6f8;
+  width: 100%;
+  height: 100vh;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  display: flex;
+  justify-content: center;
+}
+.single__book-card {
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 50%;
+  height: 98vh;
+  img {
+    width: 100%;
+    height: 65vh;
+  }
+  h2 {
+    color: #000;
+    font-family: $font-rubik;
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 30px; /* 120% */
+    text-transform: capitalize;
+  }
+  p {
+    color: #000;
+    font-family: $font-rambla;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px; /* 187.5% */
+    text-transform: capitalize;
+  }
+  a {
+    text-decoration: none;
+    button {
+      border-radius: 10px;
+      border: 1px solid #ff971d;
+      background: rgba(255, 151, 29, 0.1);
+      display: flex;
+      padding: 12px;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      align-self: stretch;
+      color: #ff971d;
+      font-family: $font-rubik;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      text-transform: capitalize;
+      transition: all 0.2s;
+    }
+    button:hover {
+      background-color: #ff971d;
+      color: #fff;
+      transform: scale(1.03);
+      transition: all 0.2s;
+    }
+    button:active {
+      background-color: #ff971d;
+      color: #fff;
+      transform: scale(0.9);
+      transition: all 0.2s;
+    }
+  }
+}
+
+@include respond-to-1260 {
+  .single__book {
+    background: #f5f6f8;
+    width: 100%;
+    height: 100vh;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    display: flex;
+    justify-content: center;
+  }
+  .single__book-card {
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    height: 95vh;
+    img {
+      width: 100%;
+      height: 60vh;
+    }
+    h2 {
+      color: #000;
+      font-family: $font-rubik;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 30px; /* 120% */
+      text-transform: capitalize;
+    }
+    p {
+      color: #000;
+      font-family: $font-rambla;
+      font-size: 13px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 16px; /* 187.5% */
+      text-transform: capitalize;
+    }
+    a {
+      text-decoration: none;
+      button {
+        border-radius: 10px;
+        border: 1px solid #ff971d;
+        background: rgba(255, 151, 29, 0.1);
+        display: flex;
+        padding: 12px;
+        justify-content: center;
+        align-items: center;
+        align-self: stretch;
+        color: #ff971d;
+        font-family: $font-rubik;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        text-transform: capitalize;
+        transition: all 0.2s;
+      }
+      button:hover {
+        background-color: #ff971d;
+        color: #fff;
+        transform: scale(1.03);
+        transition: all 0.2s;
+      }
+      button:active {
+        background-color: #ff971d;
+        color: #fff;
+        transform: scale(0.9);
+        transition: all 0.2s;
+      }
+    }
+  }
+}
+
+@include respond-to-839 {
+  .single__book {
+    background: #f5f6f8;
+    width: 100%;
+    height: 100vh;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: center;
+  }
+  .single__book-card {
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    height: 90vh;
+    padding-bottom: 1rem;
+    img {
+      width: 100%;
+      height: 60vh;
+    }
+    h2 {
+      color: #000;
+      font-family: $font-rubik;
+      font-size: 15px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 20px; /* 120% */
+      text-transform: capitalize;
+    }
+    p {
+      color: #000;
+      font-family: $font-rambla;
+      font-size: 11px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 16px; /* 187.5% */
+      text-transform: capitalize;
+    }
+    a {
+      text-decoration: none;
+      button {
+        border-radius: 10px;
+        border: 1px solid #ff971d;
+        background: rgba(255, 151, 29, 0.1);
+        display: flex;
+        padding: 8px;
+        justify-content: center;
+        align-items: center;
+        align-self: stretch;
+        color: #ff971d;
+        font-family: $font-rubik;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        text-transform: capitalize;
+        transition: all 0.2s;
+      }
+      button:hover {
+        background-color: #ff971d;
+        color: #fff;
+        transform: scale(1.03);
+        transition: all 0.2s;
+      }
+      button:active {
+        background-color: #ff971d;
+        color: #fff;
+        transform: scale(0.9);
+        transition: all 0.2s;
+      }
+    }
+  }
+}
+@include respond-to-xs {
+  .single__book {
+    background: #f5f6f8;
+    width: 100%;
+    height: 100vh;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: center;
+  }
+  .single__book-card {
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    height: 94vh;
+    padding-bottom: 1rem;
+    img {
+      width: 100%;
+      height: 60vh;
+    }
+    h2 {
+      color: #000;
+      font-family: $font-rubik;
+      font-size: 13px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 15px; /* 120% */
+      text-transform: capitalize;
+    }
+    p {
+      color: #000;
+      font-family: $font-rambla;
+      font-size: 10px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 15px; /* 187.5% */
+      text-transform: capitalize;
+    }
+    a {
+      text-decoration: none;
+      padding: 0;
+      button {
+        border-radius: 10px;
+        border: 1px solid #ff971d;
+        background: rgba(255, 151, 29, 0.1);
+        display: flex;
+        padding: 8px;
+        justify-content: center;
+        align-items: center;
+        align-self: stretch;
+        color: #ff971d;
+        font-family: $font-rubik;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        text-transform: capitalize;
+        transition: all 0.2s;
+      }
+      button:hover {
+        background-color: #ff971d;
+        color: #fff;
+        transform: scale(1.03);
+        transition: all 0.2s;
+      }
+      button:active {
+        background-color: #ff971d;
+        color: #fff;
+        transform: scale(0.9);
+        transition: all 0.2s;
+      }
+    }
+  }
+}
+
+@include respond-to-375 {
+  .single__book {
+    background: #f5f6f8;
+    width: 100%;
+    height: 100vh;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: center;
+  }
+  .single__book-card {
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    height: 100vh;
+    padding-bottom: 1rem;
+    img {
+      width: 100%;
+      height: 60vh;
+    }
+    h2 {
+      color: #000;
+      font-family: $font-rubik;
+      font-size: 13px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 15px; /* 120% */
+      text-transform: capitalize;
+    }
+    p {
+      color: #000;
+      font-family: $font-rambla;
+      font-size: 10px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 15px; /* 187.5% */
+      text-transform: capitalize;
+    }
+    a {
+      text-decoration: none;
+      padding: 0;
+      button {
+        border-radius: 10px;
+        border: 1px solid #ff971d;
+        background: rgba(255, 151, 29, 0.1);
+        display: flex;
+        padding: 8px;
+        justify-content: center;
+        align-items: center;
+        align-self: stretch;
+        color: #ff971d;
+        font-family: $font-rubik;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        text-transform: capitalize;
+        transition: all 0.2s;
+      }
+      button:hover {
+        background-color: #ff971d;
+        color: #fff;
+        transform: scale(1.03);
+        transition: all 0.2s;
+      }
+      button:active {
+        background-color: #ff971d;
+        color: #fff;
+        transform: scale(0.9);
+        transition: all 0.2s;
+      }
+    }
+  }
+}

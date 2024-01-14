@@ -29,11 +29,21 @@ const About = () => {
   }
 
   return (
-    <div className="about">
-      <h1>{data?.volumeInfo?.title}</h1>
-      <h2>{data?.volumeInfo?.authors?.[0]}</h2>
-      <h3>{data?.volumeInfo?.subtitle}</h3>
-      <Link to='/'>back to home</Link>
+    <div className="single__book">
+      <div className="single__book-card">
+        <img
+          src={data?.volumeInfo?.imageLinks?.thumbnail}
+          alt={data?.volumeInfo?.title}
+        />
+        <div>
+          <h1>{data?.volumeInfo?.title}</h1>
+          <h2>{data?.volumeInfo?.authors?.[0]}</h2>
+          <h3>{data?.volumeInfo?.subtitle}</h3>
+          <Link to="/" style={{}}>
+            <button>back to home</button>
+          </Link>
+        </div>
+      </div>
     </div>
   );
 };
