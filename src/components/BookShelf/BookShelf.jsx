@@ -13,7 +13,6 @@ const BookShelf = () => {
   const data = useSelector((state) => state.data.data);
   const loading = useSelector((state) => state.data.loading);
   const error = useSelector((state) => state.data.error);
-
   const [selectedGenre, setSelectedGenre] = useState("all");
   const genres = [
     "all",

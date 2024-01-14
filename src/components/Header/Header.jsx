@@ -1,7 +1,8 @@
 import React from "react";
 import "./header.scss";
 import Navbar from "../Navbar/Navbar";
-import searchBar from '../../assets/icons/search.svg'
+import searchBar from "../../assets/icons/search.svg";
+
 const Header = ({ title, bg, subtitle }) => {
   return (
     <div className="header" style={{ backgroundImage: `url(${bg})` }}>
