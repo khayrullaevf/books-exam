@@ -20,7 +20,6 @@ const Articles = () => {
   if (error) {
     return <p>Error occurred</p>;
   }
-  console.log(data);
   return (
     <div className="articles">
       <div className="container">

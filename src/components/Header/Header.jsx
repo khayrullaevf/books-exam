@@ -1,7 +1,7 @@
 import React from "react";
 import "./header.scss";
 import Navbar from "../Navbar/Navbar";
-import searchBar from "../../assets/icons/search.svg";
+import SearchForm from "../SearchForm/SearchForm";
 
 const Header = ({ title, bg, subtitle }) => {
   return (
@@ -11,13 +11,7 @@ const Header = ({ title, bg, subtitle }) => {
         <div className="hero">
           <h1 className="hero__title">{title}</h1>
           <h3 className="hero__subtitle">{subtitle}</h3>
-          <form className="hero__form">
-            <button type="submit">
-              {" "}
-              <img src={searchBar} alt="searchBar" />
-            </button>
-            <input type="text" placeholder="Search books..." />
-          </form>
+          <SearchForm/>
         </div>
       </div>
     </div>

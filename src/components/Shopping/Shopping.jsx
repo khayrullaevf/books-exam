@@ -41,7 +41,6 @@ const Shopping = () => {
     return <p>Error occurred</p>;
   }
 
-  console.log(data?.items);
   return (
     <div className="shopping">
       <div className="shopping__filters">

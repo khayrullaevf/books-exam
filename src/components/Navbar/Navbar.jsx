@@ -3,41 +3,57 @@ import shoppingCart from "../../assets/icons/shopping-cart.svg";
 import { AiOutlineBars } from "react-icons/ai";
 import { IoClose } from "react-icons/io5";
 import "./navbar.scss";
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 import { useState } from "react";
+
 const Navbar = () => {
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const location = useLocation();
 
   const toggleMobileMenu = () => {
     setTimeout(() => {
       setMobileMenuOpen(!isMobileMenuOpen);
     }, 100);
   };
+
+  const isNavLinkActive = (path) => {
+    return location.pathname === path;
+  };
+
   return (
     <nav>
       <div className="container">
         <div className={`navbar ${isMobileMenuOpen ? "mobile-menu-open" : ""}`}>
           <div className="navbar__left">
-            <a href="/">
+            <NavLink to="/">
               {" "}
               <img src={logo} alt="logo" />
-            </a>
+            </NavLink>
             <img src={shoppingCart} alt="shopping cart" />
           </div>
           <div className="navbar__right">
             <ul>
               <li>
-                <NavLink to="/" activeClassName="active">
+                <NavLink
+                  to="/"
+                  className={isNavLinkActive("/") ? "active" : ""}
+                >
                   Explore
                 </NavLink>
               </li>
               <li>
-                <NavLink to="/shop" activeClassName="active">
+                <NavLink
+                  to="/shop"
+                  className={isNavLinkActive("/shop") ? "active" : ""}
+                >
                   Shop
                 </NavLink>
               </li>
               <li>
-                <NavLink to="/blog" activeClassName="active">
+                <NavLink
+                  to="/blog"
+                  className={isNavLinkActive("/blog") ? "active" : ""}
+                >
                   Blog
                 </NavLink>
               </li>
@@ -46,7 +62,7 @@ const Navbar = () => {
           </div>
 
           <div className="mobile__menu">
-            <button onClick={toggleMobileMenu} >
+            <button onClick={toggleMobileMenu}>
               {isMobileMenuOpen ? (
                 <IoClose style={{ color: "#fff", fontSize: "27px" }} />
               ) : (
@@ -56,17 +72,26 @@ const Navbar = () => {
             {isMobileMenuOpen && (
               <ul>
                 <li>
-                  <NavLink to="/" activeClassName="active">
+                  <NavLink
+                    to="/"
+                    className={isNavLinkActive("/") ? "active" : ""}
+                  >
                     Explore
                   </NavLink>
                 </li>
                 <li>
-                  <NavLink to="/shop" activeClassName="active">
+                  <NavLink
+                    to="/shop"
+                    className={isNavLinkActive("/shop") ? "active" : ""}
+                  >
                     Shop
                   </NavLink>
                 </li>
                 <li>
-                  <NavLink to="/blog" activeClassName="active">
+                  <NavLink
+                    to="/blog"
+                    className={isNavLinkActive("/blog") ? "active" : ""}
+                  >
                     Blog
                   </NavLink>
                 </li>

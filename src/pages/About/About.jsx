@@ -18,7 +18,7 @@ const About = () => {
         `https://www.googleapis.com/books/v1/volumes/${id}?key=${API__KEY}`
       )
     );
-  }, [dispatch, id]);
+  }, [dispatch,id]);
 
   if (loading) {
     return <Loading />;
@@ -35,7 +35,7 @@ const About = () => {
           src={data?.volumeInfo?.imageLinks?.thumbnail}
           alt={data?.volumeInfo?.title}
         />
-        <div>
+        <div style={{paddingLeft:'0.3rem'}}>
           <h1>{data?.volumeInfo?.title}</h1>
           <h2>{data?.volumeInfo?.authors?.[0]}</h2>
           <h3>{data?.volumeInfo?.subtitle}</h3>
