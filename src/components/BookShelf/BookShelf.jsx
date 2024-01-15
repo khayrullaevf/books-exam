@@ -6,7 +6,7 @@ import "./bookshelf.scss";
 import Book from "../Book/Book";
 import PopularBooks from "../PopularBooks/PopularBooks";
 import NewStory from "../NewStory/NewStory";
-const API__KEY = "AIzaSyBvoZyYhC0yBcKFwCHqQN5CVew1cU2qgn8";
+const API__KEY = "AIzaSyBrsRM04Q1qWqMqfnDd-3uulkzpEFhlDf0";
 
 const BookShelf = () => {
   const dispatch = useDispatch();
@@ -34,9 +34,9 @@ const BookShelf = () => {
   const handleGenreChange = (genre) => {
     setSelectedGenre(genre);
   };
-  if (loading) {
-    return <Loading />;
-  }
+  // if (loading) {
+  //   return <Loading />;
+  // }
 
   if (error) {
     return <p>Error occurred</p>;
@@ -75,6 +75,9 @@ const BookShelf = () => {
         </ul>
       </div>
       <div className="books__wrapper">
+        {
+        loading&&<Loading/>
+        }
         <div className="books">
           <h2>Recommended</h2>
           <div className="books__cards">

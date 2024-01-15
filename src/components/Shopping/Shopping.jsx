@@ -5,7 +5,7 @@ import Loading from "../Loading/Loading";
 import "./shopping.scss";
 import ShoppingBook from "../ShoppingBook/ShoppingBook";
 
-const API__KEY = "AIzaSyBvoZyYhC0yBcKFwCHqQN5CVew1cU2qgn8";
+const API__KEY = "AIzaSyBrsRM04Q1qWqMqfnDd-3uulkzpEFhlDf0";
 const Shopping = () => {
   const dispatch = useDispatch();
   const data = useSelector((state) => state.data.data);

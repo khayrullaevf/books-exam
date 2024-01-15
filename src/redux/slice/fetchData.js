@@ -1,8 +1,6 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 
 
-
-
 export const fetchData = createAsyncThunk("fetchData", async (url) => {
   try {
     const response = await fetch(url);

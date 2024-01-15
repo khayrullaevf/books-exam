@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import searchBar from "../../assets/icons/search.svg";
 import { useDispatch  } from "react-redux";
 import {fetchData} from "../../redux/slice/fetchData";
-const API__KEY = "AIzaSyCkOD-5iwmzMP5or412viJWJvM6yHkHn2M";
+const API__KEY = "AIzaSyBrsRM04Q1qWqMqfnDd-3uulkzpEFhlDf0";
 
 const SearchForm = () => {
   const dispatch = useDispatch();
